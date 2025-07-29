@@ -1,0 +1,58 @@
+<!--
+  One‑page gallery showing all provided photos sequentially.
+
+  The images are displayed on a black background with no text; viewers
+  scroll vertically to see each photo. Place all image files listed below
+  in the same directory as this HTML file.
+-->
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
+  <title>Galerie – všechny fotografie</title>
+  <style>
+    /* Reset default browser spacing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #000;
+      font-family: sans-serif;
+    }
+    /* Vertical stack for images */
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+    .gallery img {
+      width: 90vw;
+      max-width: 1200px;
+      height: auto;
+      object-fit: contain;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="0A2A3278.PNG" alt="Detail 1">
+    <img src="0A2A3270.PNG" alt="Detail 2">
+    <img src="0A2A3274.PNG" alt="Detail 3">
+    <img src="0A2A3252.PNG" alt="Celkový pohled 1">
+    <img src="0A2A3255.PNG" alt="Celkový pohled 2">
+    <img src="0A2A3263.PNG" alt="Celkový pohled 3">
+    <img src="0A2A3193.PNG" alt="Polocelý pohled 1">
+    <img src="0A2A3223.PNG" alt="Polocelý pohled 2">
+    <img src="0A2A3238.PNG" alt="Polocelý pohled 3">
+    <img src="0A2A3239.PNG" alt="Polocelý pohled 4">
+    <img src="0A2A3176.PNG" alt="Postava s obrazem 1">
+    <img src="0A2A3177.PNG" alt="Postava s obrazem 2">
+  </div>
+</body>
+</html>
