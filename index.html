@@ -2,8 +2,8 @@
   One‑page gallery showing all provided photos sequentially.
 
   The images are displayed on a black background with no text; viewers
-  scroll vertically to see each photo. Place all image files listed below
-  in the same directory as this HTML file.
+  scroll vertically to see each photo. Below the images is a formal
+  description of the piece in white serif text.
 -->
 <!DOCTYPE html>
 <html lang="cs">
@@ -12,7 +12,6 @@
   <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
   <title>Galerie – všechny fotografie</title>
   <style>
-    /* Reset default browser spacing */
     * {
       margin: 0;
       padding: 0;
@@ -22,7 +21,6 @@
       background-color: #000;
       font-family: sans-serif;
     }
-    /* Vertical stack for images */
     .gallery {
       display: flex;
       flex-direction: column;
@@ -37,6 +35,16 @@
       object-fit: contain;
       border: none;
     }
+    .description {
+      color: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem 4rem;
+      font-size: 1rem;
+      white-space: pre-line;
+    }
   </style>
 </head>
 <body>
@@ -47,12 +55,31 @@
     <img src="0A2A3252.PNG" alt="Celkový pohled 1">
     <img src="0A2A3255.PNG" alt="Celkový pohled 2">
     <img src="0A2A3263.PNG" alt="Celkový pohled 3">
-    <img src="0A2A3193.PNG" alt="Polocelý pohled 1">
     <img src="0A2A3223.PNG" alt="Polocelý pohled 2">
     <img src="0A2A3238.PNG" alt="Polocelý pohled 3">
     <img src="0A2A3239.PNG" alt="Polocelý pohled 4">
     <img src="0A2A3176.PNG" alt="Postava s obrazem 1">
     <img src="0A2A3177.PNG" alt="Postava s obrazem 2">
+  </div>
+  <div class="description">
+Uschlý Banán
+Umělec je Komediant. Umění je pouhá zábava. Třešnička na dortu, bez které se obejdeme.
+
+Uschlý Banán je rozkročen mezi dvěmi díly.
+Dílem Italského konceptuálního umělce, který odebral vážnost trhu s uměním a umění vůbec.
+A scénografickou zakázkou feministického filmu S Ní odehrávajícího se v pražském bytě fiktivní etablované režisérky, která si zvolila slávu svých filmů před sebou, mateřstvím, rodinou a přáteli.
+
+Uschlý Banán je krystalizací l’art pour art. Je to uschlý Komediant Maurizia Cattelaniho, který se zatáhl z prostoru sám do sebe.
+Lidé se smáli kýči tak dlouho, až ho vyčerpali. Samozvaný umělec pod tíhou absurdity své práce uschl. Jediné co společnost vidí na umění, je jeho dekadence, a tak je doménou uschlých starých mužů z řad elit, kteří si kousky odváží do temnot svých skladů.
+
+Snad Vám je jasné, že na Cattelaniho dílo obraz navazuje nejenom jako oslavování, ale i jako následek nezájmu, který by nastal, kdyby nikdo na banán umělce neměl chuť. Kdyby nebylo hladovějících lidí a dětí. Kdyby nikdo nikdy nevystoupil z konzumní hry umělec – umění – divák a nesežral ho.
+Protože až při porušení pravidel této hry nastává umělecký počin. Věcný moment. Moment sytosti a roztažení se do prostoru.
+
+Jde o důsledek nezájmu vůči umění ve světě pouťových sladidel a atrakcí, které přestaly bavit, kterých je Cattelani principál, autor, majitel, vykořisťovatel. Kapitalista.
+
+Vykořisťovatel komediantů.
+
+Pán Komedie.
   </div>
 </body>
 </html>
