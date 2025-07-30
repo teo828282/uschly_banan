@@ -2,15 +2,17 @@
   One‑page gallery showing all provided photos sequentially.
 
   Images are displayed on a black background; viewers scroll vertically.
-  At the end is a description rendered in a light concrete‑like grey with
-  a sans-serif typeface.
+  A large heading spans the width at the top using the Space Grotesk font,
+  and a description appears at the end in the same font with a concrete‑grey color.
 -->
 <!DOCTYPE html>
 <html lang="cs">
 <head>
   <meta charset="UTF‑8">
   <meta name="viewport" content="width=device‑width, initial‑scale=1.0">
-  <title>Galerie – všechny fotografie</title>
+  <title>Uschlý Banán – galerie</title>
+  <!-- Import Space Grotesk font -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -20,6 +22,19 @@
     body {
       background-color: #000;
       font-family: sans-serif;
+    }
+    .headline {
+      /* Space Grotesk heading spans the full width of the page */
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      color: #b3b3b3;
+      width: 100%;
+      text-align: center;
+      /* Use a responsive font size so the text stretches from edge to edge on large screens */
+      font-size: clamp(3rem, 14vw, 8rem);
+      line-height: 1.1;
+      margin: 0;
+      padding: 2rem 0;
     }
     .gallery {
       display: flex;
@@ -36,8 +51,8 @@
       border: none;
     }
     .description {
-      color: #b3b3b3; /* concrete-like grey */
-      font-family: Arial, Helvetica, sans-serif;
+      color: #b3b3b3;
+      font-family: 'Space Grotesk', sans-serif;
       line-height: 1.6;
       max-width: 800px;
       margin: 2rem auto;
@@ -48,6 +63,7 @@
   </style>
 </head>
 <body>
+  <h1 class="headline">Uschlý Banán</h1>
   <div class="gallery">
     <img src="0A2A3278.PNG" alt="Detail 1">
     <img src="0A2A3270.PNG" alt="Detail 2">
@@ -62,7 +78,6 @@
     <img src="0A2A3177.PNG" alt="Postava s obrazem 2">
   </div>
   <div class="description">
-Uschlý Banán
 Umělec je Komediant. Umění je pouhá zábava. Třešnička na dortu, bez které se obejdeme.
 
 Uschlý Banán je rozkročen mezi dvěmi díly.
