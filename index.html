@@ -28,7 +28,11 @@
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
       color: #b3b3b3;
-      width: 100%;
+      /* span the full viewport width and center it using transform */
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
       text-align: center;
       /* Use a responsive font size so the text stretches from edge to edge on large screens */
       font-size: clamp(3rem, 14vw, 8rem);
@@ -69,7 +73,6 @@
     <img src="0A2A3270.PNG" alt="Detail 2">
     <img src="0A2A3274.PNG" alt="Detail 3">
     <img src="0A2A3252.PNG" alt="Celkový pohled 1">
-    <img src="0A2A3255.PNG" alt="Celkový pohled 2">
     <img src="0A2A3263.PNG" alt="Celkový pohled 3">
     <img src="0A2A3223.PNG" alt="Polocelý pohled 2">
     <img src="0A2A3238.PNG" alt="Polocelý pohled 3">
