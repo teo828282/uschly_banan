@@ -22,6 +22,7 @@
     body {
       background-color: #000;
       font-family: sans-serif;
+      overflow-x: hidden; /* prevent horizontal scrollbar so the heading can extend to viewport edges */
     }
     .headline {
       /* Space Grotesk heading spans the full width of the page */
@@ -34,11 +35,12 @@
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
-      /* Use a responsive font size so the text stretches from edge to edge on large screens */
-      font-size: clamp(3rem, 14vw, 8rem);
-      line-height: 1.1;
+      /* Use a larger responsive font size so the text truly spans the viewport */
+      font-size: clamp(4rem, 18vw, 12rem);
+      letter-spacing: 0.05em;
+      line-height: 1;
       margin: 0;
-      padding: 2rem 0;
+      padding: 1.5rem 0;
     }
     .gallery {
       display: flex;
